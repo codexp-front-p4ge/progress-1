@@ -10,6 +10,10 @@ html, body {
     height: 100%;
 }
 
+.bring-fundo {
+    background: #F4F4F6;
+}
+
 .bring {
     width: 100%;
     display: flex;
@@ -19,11 +23,14 @@ html, body {
     padding: 10% 0;
 }
 
-.bring-title, .bring-text {
+.bring-title,
+.bring-text {
     text-align: center;
 }
 
-.bring-title, .services, .bring-text {
+.bring-title,
+.services,
+.bring-text {
     width: 70%;
     margin: 5% 0;
 }
@@ -51,7 +58,7 @@ html, body {
     margin: 0 2%;
 }
 
-.services-phone__demo{
+.services-phone__demo {
     width: 100%;
 }
 
@@ -70,6 +77,7 @@ html, body {
     line-height: 1.3rem;
 }
 
+
 /* FORM */
 
 .invite {
@@ -78,12 +86,14 @@ html, body {
     width: 60%;
     height: 30px;
 }
+
 .invite__input {
     padding: 2% 4%;
     border-radius: 8px 0 0 8px;
     border-style: none;
     font-size: 0.7rem;
 }
+
 .invite__button {
     min-width: 30%;
     padding: 2% 4%;
@@ -94,6 +104,7 @@ html, body {
     font-size: 0.7rem;
 }
 
+
 @media screen and (min-width: 768px) {
 
     .bring-title {
@@ -103,32 +114,32 @@ html, body {
         font-size: 1.7rem;
     }
     .bring-parag {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
     .invite {
         height: 40px;
     }
-
-    .invite__input, .invite__button {
+    .invite__input,
+    .invite__button {
         font-size: 0.8rem;
     }
-
     .invite__input {
         width: 60%;
     }
-
     .invite__button {
         width: 40%;
     }
 }
 
 @media screen and (min-width: 992px) {
-
+    .max-size-global {
+        max-width: 1150px;
+        margin: auto;
+    }
     .services {
         width: 95%;
         align-items: center;
     }
-
     .services-icon {
         display: flex;
         flex-direction: row;
@@ -136,34 +147,27 @@ html, body {
         width: 40%;
         justify-content: center;
     }
-
     .services-icon__demo {
         width: 32%;
         height: 100%;
         margin: 3% 6%;
     }
-
     .services-icon__demo--1 {
-        order: 1; 
+        order: 1;
     }
-
     .services-icon__demo--2 {
-        order: 2; 
+        order: 2;
     }
-
     .services-icon__demo--3 {
-        order: 3; 
+        order: 3;
     }
-
     .services-icon__demo--4 {
-        order: 4; 
+        order: 4;
     }
-
     .services-phone {
         width: 35%;
         margin: 0;
     }
-
     .invite {
         width: 40%;
     }

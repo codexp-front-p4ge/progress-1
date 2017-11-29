@@ -36,3 +36,9 @@
         padding-left: 3%;
     }
 }
+@media screen and (min-width: 992px) {
+    .max-size-global {
+        max-width: 1150px;
+        margin: auto;
+    }
+}
