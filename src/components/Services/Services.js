@@ -1,29 +1,29 @@
 import React from "react";
-import Services from "./Services.css"
+import Services from "./Services.css";
 
 var services = {
     service1: {
         description: "Tensioner",
         qty: 1,
-        price: 45.00,
+        price: 45.00
     },
 
     service2: {
         description: "Oil Filter",
         qty: 1,
-        price: 103.00,
+        price: 103.00
     },
 
     service3: {
         description: "Bilstein 5100 Shocks",
         qty: 4,
-        price: 200.00,
+        price: 200.00
     },
 
     service4: {
         description: "Labor (per hour)",
         qty: 14,
-        price: 70.00,
+        price: 70.00
     },
 };
 

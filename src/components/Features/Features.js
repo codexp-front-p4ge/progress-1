@@ -2,6 +2,7 @@ import React from "react";
 import "./Features.css";
 import ComunicationImg from "./codeMobile.PNG";
 import EstimateImg from "./tableMobile.PNG";
+import FormServices from "../FormServices/FormServices";
 
 var features = {
     title1: "Tracks projects easily",
@@ -31,7 +32,7 @@ export default (props) => (
             </div>
         </article>
         <article className="feature flex__reverse">
-            <img alt={features2.altEstimate} className="feature__demo" src={EstimateImg} />
+            <FormServices />
             <div className="feature-info">
                 <h2 className="feature-info__title">{features2.title}</h2>
                 <p className="feature-info__text">{features2.description}</p>
