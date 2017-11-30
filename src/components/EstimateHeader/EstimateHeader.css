@@ -1,0 +1,26 @@
+.estimate-header{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+.company__name, .vendor__name, .vehicle__model, .vehicle__miles, .vehicle__vin{
+    font-weight: bold;
+}
+.company__adress, .company__complement, .vendor__prepared, .vehicle__title{
+    color: gray;
+}
+.company, .order, .vendor, .vehicle{
+    box-sizing: border-box;
+    display: inline-block;
+    padding-top: 5%;
+    width: 50%;
+}
+.order{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    vertical-align: bottom;
+}
+.align-right{
+    text-align: right;
+}
