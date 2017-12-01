@@ -1,0 +1,10 @@
+.form-services{
+    max-width: 550px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 2rem;
+}
+.form-services__align-button{
+    display: flex;
+    justify-content: space-around;
+}
