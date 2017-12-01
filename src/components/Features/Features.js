@@ -4,38 +4,44 @@ import ComunicationImg from "./codeMobile.PNG";
 import EstimateImg from "./tableMobile.PNG";
 import FormServices from "../FormServices/FormServices";
 
-var features = {
-    title1: "Tracks projects easily",
-    description1: "Providers can give updates, share status, request updates, and require payments in one efficient tool. Simple, easy, progress.",
-    title2: "Clear communication",
-    description2: "Progress allow direct communication between the consumer and service provider. No more waiting for call backs, missing emails, or lost paperwork.",
-    altComunication: "imagem de duas conversas de monitoramento de serviços"
-}
-
-var features2 = {
-    title: "Estimate, approve, pay",
-    description: "The major steps of a service job are made simple with Progress. in one location, information and updateson project estimates and scopes of work are shared between provider and consumer.",
-    altEstimate: "tabela com custos dos serviços"
-}
+var company = {
+    name: "1Eurotech Motor, LLC",
+    adress: "2555 Water Tower Coast",
+    complement: "3Holland, MI 49242"
+};
+var order = {
+    estimate: "ESTIMATE * 18801934",
+    progress: "PROGRESS CODE 3110556"
+};
+var vendor = {
+    prepared: "Prepared for",
+    name: "Jake Montgomery"
+};
+var vehicle = {
+    title: "Vehicle",
+    model: "2010 Mini Cooper S",
+    miles: "Miles: 31,209",
+    vin: "VIN: 000193HHAAO1|345"
+};
 
 export default (props) => (
     <section className="max-size-global">
         <article className="feature">
             <div className="feature-info feature__demo--float">
-                <h2 className="feature-info__title">{features.title1}</h2>
-                <p className="feature-info__text">{features.description1}</p>
+                <h2 className="feature-info__title">{props.featureTitle1}</h2>
+                <p className="feature-info__text">{props.featureDesc1}</p>
             </div>
-            <img alt={features.altComunication} className="feature__demo feature__demo--floatLeft" src={ComunicationImg} />
+            <img alt={props.featureAltImg} className="feature__demo feature__demo--floatLeft" src={ComunicationImg} />
             <div className="feature-info feature__demo--float">
-                <h2 className="feature-info__title">{features.title2}</h2>
-                <p className="feature-info__text">{features.description2}</p>
+                <h2 className="feature-info__title">{props.featureTitle2}</h2>
+                <p className="feature-info__text">{props.featureDesc2}</p>
             </div>
         </article>
         <article className="feature flex__reverse">
-            <FormServices />
+            <FormServices companyAdress={company.adress} companyComplment={company.complement} />
             <div className="feature-info">
-                <h2 className="feature-info__title">{features2.title}</h2>
-                <p className="feature-info__text">{features2.description}</p>
+                <h2 className="feature-info__title">{props.feature2Title}</h2>
+                <p className="feature-info__text">{props.feature2Desc}</p>
             </div>
         </article>
     </section> 

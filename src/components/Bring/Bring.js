@@ -10,17 +10,11 @@ import imgService8 from "./icon8.png";
 import imgPhone from "./phone.png";
 import "./Bring.css"
 
-var bring = {
-    title: "Bring Your Own Business",
-    subtitle:"Flexible Platform",
-    description: "We are an industry agnostic platform. If you can track it, you can Progress it! Progress makes it easy for service providers to connect directly with their customers."
-};
-
 export default (props) => (
     <section class="bring-fundo">
         <div class="bring max-size-global">
             <h1 className="bring-title">
-                {bring.title}
+                {props.title}
             </h1>
             <div className="services">
                 <div className="services-icon services-icon--left">
@@ -42,10 +36,10 @@ export default (props) => (
 
             <div className="bring-text">
                 <h2 className="bring-subtitle">
-                    {bring.subtitle}
+                    {props.subtitle}
                 </h2>
                 <p className="bring-parag">
-                    {bring.description}
+                    {props.desc}
                 </p>
             </div>
 
